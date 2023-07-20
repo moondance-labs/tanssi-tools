@@ -8,7 +8,8 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "register-para": "ts-node 'scripts/sudoRegisterPara.ts'"
+    "register-para": "ts-node 'scripts/sudoRegisterPara.ts'",
+    "download-chainspec": "ts-node 'scripts/downdloadChainSpec.ts'"
   },
   "devDependencies": {
     "@polkadot/api": "^10.9.1",
@@ -28,6 +29,8 @@
     "typescript": "^5.1.6",
     "web3": "4.0.2",
     "web3-providers-ws": "4.0.2",
-    "yargs": "^17.7.2"
+    "yargs": "^17.7.2",
+    "yaml": "2.3.1",
+    "@zombienet/utils": "^0.0.19"   
   }
 }

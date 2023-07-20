@@ -77,3 +77,17 @@ This is done with yarn `register-para deregister` subcommand and it allows to de
 #### Examples
 
 `yarn register-para deregister --para-id 2002 --account-priv-key "0xe5be9a5092b81bca64be81d212e7f2f9eba183bb7a90954f7b76361f6edb5c0a" --url "ws://127.0.0.1:9948"`
+
+## Download chain-spec from Tanssi on-chain data
+
+Script that allows to download a chain-spec, with bootnodes and type from Tanssi registered onchain data. Can be done with `download-chainspec`. It will ask for the following parameters:
+
+- `--output` output file for the chain-spec file
+- `--para-id` the para id for which we want to download the chain-spec
+- `--url` endpoint of the Tanssi network in which we want to issue the transaction.
+- `--relay-chain` the relay-chain that we want to put in the chain-spec
+- `--chain-type` the chain-type we want to put in the chain-spec
+
+#### Examples
+
+`yarn download-chainspec --output thispec.json --para-id 2000 --url "ws://127.0.0.1:9948" --relay-chain "rococo" --chain-type "Live"`
