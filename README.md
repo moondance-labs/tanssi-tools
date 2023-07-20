@@ -39,7 +39,7 @@ This is done with yarn `register-para setBootNodes` subcommand, and it allows to
 
 #### Examples
 
-`yarn register-para setBootNodes --para-id 2002 --account-priv-key "0xe5be9a5092b81bca64be81d212e7f2f9eba183bb7a90954f7b76361f6edb5c0a" --url "ws://127.0.0.1:9948" --keep-existing --bootnode "/dns4/vira-stagenet-dancebox-c1-rpc-0.a.moondev.network/tcp/30333/p2p/12D3KooWHdrcQmeK4V158yEHF8U4iLQr3nseqjQ1bm3f2zBcZdoi"`
+`yarn register-para setBootNodes --para-id 2002 --account-priv-key "0xe5be9a5092b81bca64be81d212e7f2f9eba183bb7a90954f7b76361f6edb5c0a" --url "ws://127.0.0.1:9948" --keep-existing --bootnode "/ip4/127.0.0.1/tcp/33051/ws/p2p/12D3KooWSDsmAa7iFbHdQW4X8B2KbeRYPDLarK6EbevUSYfGkeQw"`
 
 ### Mark valid for collating in Tanssi
 This is done with yarn `register-para markValidForCollating` subcommand and it allows to mark a container-chain as valid for collation. This will ask for several things:
