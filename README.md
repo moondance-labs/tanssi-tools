@@ -26,22 +26,6 @@ This is done with yarn `register-para register` subcommand. This will ask for se
 `yarn register-para register --chain template-container-2002.json --account-priv-key "0xe5be9a5092b81bca64be81d212e7f2f9eba183bb7a90954f7b76361f6edb5c0a" --url "ws://127.0.0.1:9948"`
 
 ### Set bootnodes for a para-id in Tanssi
-This is done with yarn `register-para setBootNodes` subcommand. This will ask for several things:
-- `--para-id` the para id for which we want to register the bootnodes
-- `--account-priv-key` the private key of the account that we want to use to issue the transaction. **IT NEEDS TO BE SUDO**.
-- `--url` endpoint of the Tanssi network in which we want to issue the transaction.
-
-- `--keep-existing` whether to keep existing bootnodes for such para-id or just replace all by the new one
-
-- `--bootnode` new bootnode to be added as string
-
-
-#### Examples
-
-`yarn register-para setBootNodes --para-id 2002 --account-priv-key "0xe5be9a5092b81bca64be81d212e7f2f9eba183bb7a90954f7b76361f6edb5c0a" --url "ws://127.0.0.1:9948" --keep-existing --bootnode "/dns4/vira-stagenet-dancebox-c1-rpc-0.a.moondev.network/tcp/30333/p2p/12D3KooWHdrcQmeK4V158yEHF8U4iLQr3nseqjQ1bm3f2zBcZdoi"`
-
-
-### Set bootnodes for a para-id in Tanssi
 This is done with yarn `register-para setBootNodes` subcommand, and it allows to set bootnodes for a given container-chain. This will ask for several things:
 - `--para-id` the para id for which we want to register the bootnodes
 - `--account-priv-key` the private key of the account that we want to use to issue the transaction. **IT NEEDS TO BE SUDO**.
