@@ -1,0 +1,33 @@
+{
+  "name": "tanssi-tools",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "register-para": "ts-node 'scripts/sudoRegisterPara.ts'"
+  },
+  "devDependencies": {
+    "@polkadot/api": "^10.9.1",
+    "@polkadot/api-augment": "^10.9.1",
+    "@polkadot/types": "^10.9.1",
+    "@polkadot/types-codec": "^10.9.1",
+    "@polkadot/util": "^12.3.2",
+    "@types/debug": "^4.1.8",
+    "@types/node": "^20.3.2",
+    "bottleneck": "^2.19.5",
+    "chalk": "^5.3.0",
+    "debug": "^4.3.4",
+    "json-bigint": "^1.0.0",
+    "prettier": "^2.8.8",
+    "solc": "^0.8.19",
+    "ts-node": "9.1",
+    "typescript": "^5.1.6",
+    "web3": "4.0.2",
+    "web3-providers-ws": "4.0.2",
+    "yargs": "^17.7.2"
+  }
+}
