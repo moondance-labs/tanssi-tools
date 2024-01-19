@@ -198,7 +198,7 @@ yargs(hideBin(process.argv))
             let bootnodes = [];
             if (argv.keepExisting) {
                 // Read existing bootnodes
-                const onChainBootnodes = await api.query.registrar.bootNodes(argv.paraId) as any;
+                const onChainBootnodes = await api.query.dataPreservers.bootNodes(argv.paraId) as any;
                 bootnodes = [...bootnodes, ...onChainBootnodes];
             }
             if (!argv.bootnode) {
@@ -206,7 +206,7 @@ yargs(hideBin(process.argv))
             }
             bootnodes = [...bootnodes, ...argv.bootnode];
 
-            let tx1 = api.tx.registrar.setBootNodes(argv.paraId, bootnodes);
+            let tx1 = api.tx.dataPreservers.setBootNodes(argv.paraId, bootnodes);
             let tx1s = api.tx.sudo.sudo(tx1);
             let tx2s = null;
             if (argv.markValidForCollating) {
