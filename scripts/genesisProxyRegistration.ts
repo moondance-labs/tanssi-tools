@@ -14,7 +14,7 @@ Account 1       | Account 2     | Any        | 0
 const args = yargs.options({
   ...NETWORK_YARGS_OPTIONS,
   'proxy-file': {
-    describe: 'Location of JSON file with proxy configuration',
+    describe: 'Location of CSV file with proxy configuration',
     type: 'string',
     demandOption: true,
     alias: ['pf'],
