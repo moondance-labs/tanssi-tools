@@ -7,6 +7,9 @@ const danceboxUnsignedTx = BigInt('27187292');
 const danceboxTx = danceboxSignedTx + danceboxUnsignedTx;
 const danceboxAccounts = BigInt('35718'); // From Subscan https://dancebox.subscan.io/
 const danceboxAppchains = BigInt('120'); //https://dancebox.subscan.io/extrinsic?page=1&time_dimension=date&signed=all&module=registrar&call=register
+const flashboxSignedTx = BigInt('43335'); // https://tanssi-campaign.squids.live/airlyft-flashbox/v/v1/graphql
+const flashboxAccounts = BigInt('10772'); // https://tanssi-campaign.squids.live/airlyft-flashbox/v/v1/graphql
+const flashboxUnsignedTx = BigInt('23128000'); // https://polkadot.js.org/apps/?rpc=wss://fraa-flashbox-rpc.a.stagenet.tanssi.network#/explorer
 
 // GraphQL endpoint for the Tanssi campaign
 const GRAPHQL_URL_APPCHAINS_DEPLOYMENT =
@@ -133,16 +136,26 @@ async function main() {
     if (totalTransactions && totalAddresses) {
       console.log(
         'Number of total addresses:',
-        (BigInt(totalAddresses) + danceboxAccounts).toString()
+        (
+          BigInt(totalAddresses) +
+          danceboxAccounts +
+          flashboxAccounts
+        ).toString()
       );
       console.log('------> Dancebox addresses:', danceboxAccounts.toString());
+      console.log('------> Flashbox addresses:', flashboxAccounts.toString());
       console.log(
         '------> Flashbox Appchains addresses:',
         totalAddresses.toString()
       );
       console.log(
         'Number of total transactions:',
-        (BigInt(totalTransactions) + danceboxTx).toString()
+        (
+          BigInt(totalTransactions) +
+          danceboxTx +
+          flashboxSignedTx +
+          flashboxUnsignedTx
+        ).toString()
       );
       console.log(
         '------> Dancebox total transactions:',
@@ -153,8 +166,16 @@ async function main() {
         danceboxUnsignedTx.toString()
       );
       console.log(
+        '------> Flashbox unsigned/system transactions:',
+        flashboxUnsignedTx.toString()
+      );
+      console.log(
         '------> Dancebox signed/user transactions:',
         danceboxSignedTx.toString()
+      );
+      console.log(
+        '------> Flashbox signed/user transactions:',
+        flashboxSignedTx.toString()
       );
       console.log(
         '------> Flashbox Appchains transactions:',
