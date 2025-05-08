@@ -173,15 +173,7 @@ yargs(hideBin(process.argv))
             },
             "bootnode": {
                 describe: "Container chain para id",
-                type: "array",
-            },
-            "keep-existing": {
-                describe: "Keep exisiting bootnodes, and append to the list instead of overwriting them",
-                type: "boolean",
-            },
-            "mark-valid-for-collating": {
-                describe: "Also mark the registered chain as valid, if it was not marked already",
-                type: "boolean",
+                type: "string",
             },
         })
         .demandOption(["para-id", "account-priv-key"]);
@@ -195,42 +187,40 @@ yargs(hideBin(process.argv))
             const privKey = argv["account-priv-key"];
             account = keyring.addFromUri(privKey);
 
-            let bootnodes = [];
-            if (argv.keepExisting) {
-                // Read existing bootnodes
-                const onChainBootnodes = await api.query.dataPreservers.bootNodes(argv.paraId) as any;
-                bootnodes = [...bootnodes, ...onChainBootnodes];
-            }
-            if (!argv.bootnode) {
-                argv.bootnode = [];
-            }
-            bootnodes = [...bootnodes, ...argv.bootnode];
+            // Creates the data preserver profile
+            let tx1 = api.tx.dataPreservers.createProfile( 
+                {
+                    url: argv.bootnode, 
+                    paraIds: {
+                        WhiteList: [ argv.paraId ]
+                    }, 
+                    mode: 'Bootnode', 
+                    assignmentRequest: 'Free' 
+                } );
 
-            let tx1 = api.tx.dataPreservers.setBootNodes(argv.paraId, bootnodes);
-            let tx1s = api.tx.sudo.sudo(tx1);
-            let tx2s = null;
-            if (argv.markValidForCollating) {
-                // Check if not already valid, and only in that case call markValidForCollating
-                const notValidParas = await api.query.registrar.pendingVerification() as any;
-                if (notValidParas.toJSON().includes(argv.paraId)) {
-                    process.stdout.write(`Will set container chain valid for collating\n`);
-                    let tx2 = api.tx.registrar.markValidForCollating(argv.paraId);
-                    tx2s = api.tx.sudo.sudo(tx2);
-                } else {
-                    // ParaId already valid, or not registered at all
-                    process.stdout.write(`Not setting container chain valid for collating\n`);
-                }
-            }
-            let tx;
-            if (tx2s != null) {
-                tx = api.tx.utility.batchAll([tx1s, tx2s]);
-            } else {
-                tx = tx1s;
-            }
-            process.stdout.write(`Sending transaction... `);
-            const txHash = await tx.signAndSend(account);
-            process.stdout.write(`${txHash.toHex()}\n`);
-            // TODO: this will always print Done, even if the extrinsic has failed
+            let txHash = await tx1.signAndSend(account);
+            console.log(`profile create, tx hash ${txHash.toHex()}`);
+              
+            await new Promise(f => setTimeout(f, 10000));
+
+            // Queries the data preserver profile id, required for assignation
+            const profiles = await api.query.dataPreservers.profiles.entries();
+            const profile = profiles.find(profile => {
+                const profileparaid = (profile[1].toJSON() as any).profile.paraIds.whitelist[0];
+
+                if (profileparaid == argv.paraId)
+                    return profile;
+            });
+            const profileId = profile[0].toHuman()[0];
+            
+            // Assigns the profile
+            let tx2 = api.tx.dataPreservers.forceStartAssignment(profileId, argv.paraId, 'Free');
+            let tx2s = api.tx.sudo.sudo(tx2);
+            
+            txHash = await tx2s.signAndSend(account);
+            process.stdout.write(`Profile assigned, tx hash ${txHash.toHex()}\n`);
+
+
             process.stdout.write(`Done ✅\n`);
         } finally {
             await api.disconnect();
