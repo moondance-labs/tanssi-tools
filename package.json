@@ -38,6 +38,7 @@
     "yargs": "^17.7.2"
   },
   "dependencies": {
+    "@tanssi/api-augment": "^0.1200.2",
     "node-fetch": "2"
   }
 }
