@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      node-fetch:
+        specifier: '2'
+        version: 2.7.0(encoding@0.1.13)
     devDependencies:
       '@acala-network/chopsticks-utils':
         specifier: ^1.0.4
@@ -1607,6 +1611,7 @@ packages:
     resolution: {integrity: sha512-Quz3MvAwHxVYNXsOByL7xI5EB2WYOeFswqaHIA3qOK3isRWTxiplBEocmmru6XmxDB2L7jDNYtYA4FyimoAFEw==}
     engines: {node: '>=8.17.0'}
     hasBin: true
+    bundledDependencies: []
 
   jsonpointer@5.0.1:
     resolution: {integrity: sha512-p/nXbhSEcu3pZRdkW1OfJhpsVtW1gd4Wa1fnQc9YLiTfAjn0312eMKimbdIQzuZl9aa9xUGaRlP9T/CJE/ditQ==}
