@@ -9,7 +9,8 @@
   "license": "ISC",
   "scripts": {
     "register-para": "ts-node 'scripts/sudoRegisterPara.ts'",
-    "download-chainspec": "ts-node 'scripts/downdloadChainSpec.ts'"
+    "download-chainspec": "ts-node 'scripts/downdloadChainSpec.ts'",
+    "test-tanssi-balances": "ts-node 'scripts/test-balance-correctness.ts'"
   },
   "devDependencies": {
     "@acala-network/chopsticks-utils": "^1.0.4",
