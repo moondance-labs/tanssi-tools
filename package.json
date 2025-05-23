@@ -9,19 +9,23 @@
   "license": "ISC",
   "scripts": {
     "register-para": "ts-node 'scripts/sudoRegisterPara.ts'",
-    "download-chainspec": "ts-node 'scripts/downdloadChainSpec.ts'"
+    "download-chainspec": "ts-node 'scripts/downdloadChainSpec.ts'",
+    "test-tanssi-balances": "ts-node 'scripts/test-balance-correctness.ts'"
   },
   "devDependencies": {
-    "@polkadot/api": "^10.9.1",
-    "@polkadot/api-augment": "^10.9.1",
-    "@polkadot/types": "^10.9.1",
-    "@polkadot/types-codec": "^10.9.1",
-    "@polkadot/util": "^12.3.2",
+    "@acala-network/chopsticks-utils": "^1.0.4",
+    "@polkadot/api": "^15.9.1",
+    "@polkadot/api-augment": "^15.9.1",
+    "@polkadot/types": "^15.9.1",
+    "@polkadot/types-codec": "^15.9.1",
+    "@polkadot/util": "^13.4.3",
+    "@polkadot/util-crypto": "^13.4.3",
     "@types/debug": "^4.1.8",
     "@types/node": "^20.3.2",
-    "@zombienet/utils": "^0.0.19",
+    "@zombienet/utils": "^0.0.28",
     "bottleneck": "^2.19.5",
     "chalk": "^5.3.0",
+    "csv-parse": "^5.6.0",
     "debug": "^4.3.4",
     "json-bigint": "^1.0.0",
     "prettier": "^2.8.8",
@@ -34,6 +38,7 @@
     "yargs": "^17.7.2"
   },
   "dependencies": {
+    "@tanssi/api-augment": "^0.1200.2",
     "node-fetch": "2"
   }
 }

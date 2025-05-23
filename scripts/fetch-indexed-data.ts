@@ -2,14 +2,15 @@
 const fetch = require('node-fetch');
 
 // Dancebox data block 6801516
-const danceboxSignedTx = BigInt('733586'); // https://dancebox.subscan.io/extrinsic?page=1&time_dimension=date&signed=all
-const danceboxUnsignedTx = BigInt('27187292');
+const danceboxSignedTx = BigInt('733285'); // https://dancebox.subscan.io/extrinsic?page=1&time_dimension=block&signed=signed&block_end=6801516
+const danceboxUnsignedTx = BigInt('27187292'); // https://dancebox.subscan.io/extrinsic?page=1&time_dimension=date&signed=all
 const danceboxTx = danceboxSignedTx + danceboxUnsignedTx;
-const danceboxAccounts = BigInt('35718'); // From Subscan https://dancebox.subscan.io/
+const danceboxAccounts = BigInt('35383'); // From Subscan https://dancebox.subscan.io/
 const danceboxAppchains = BigInt('120'); //https://dancebox.subscan.io/extrinsic?page=1&time_dimension=date&signed=all&module=registrar&call=register
 const flashboxSignedTx = BigInt('43335'); // https://tanssi-campaign.squids.live/airlyft-flashbox/v/v1/graphql
 const flashboxAccounts = BigInt('10772'); // https://tanssi-campaign.squids.live/airlyft-flashbox/v/v1/graphql
 const flashboxUnsignedTx = BigInt('23128000'); // https://polkadot.js.org/apps/?rpc=wss://fraa-flashbox-rpc.a.stagenet.tanssi.network#/explorer
+                                               // 4 Unsigned Transactions at block 5782000
 
 // GraphQL endpoint for the Tanssi campaign
 const GRAPHQL_URL_APPCHAINS_DEPLOYMENT =

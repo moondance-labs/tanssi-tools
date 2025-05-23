@@ -1,1 +1,9 @@
 node_modules
+
+# Ignore all .csv files everywhere
+**/*.csv
+
+# EXCEPT files in the genesis_files/ directory
+!/genesis_files/*.csv
+!/moonlight_files/*.csv
+

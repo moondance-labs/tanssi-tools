@@ -16,6 +16,7 @@ export type Argv = {
 export type TANSSI_NETWORK_NAME =
   | "stagenet"
   | "alphanet"
+  | "moonlight"
   | "tanssi";
 export type POLKADOT_NETWORK_NAME = "kusama" | "polkadot";
 export type NETWORK_NAME = TANSSI_NETWORK_NAME | POLKADOT_NETWORK_NAME;
@@ -24,6 +25,7 @@ export const NETWORK_WS_URLS: { [name in NETWORK_NAME]: string } = {
     // TODO: set public endpoints when they exist
     stagenet: "",
     alphanet: "",
+    moonlight: "wss://qco-moonlight-rpc-1.rv.stagenet.tanssi.network",
     tanssi: "",
     kusama: "wss://kusama-rpc.polkadot.io",
     polkadot: "wss://rpc.polkadot.io",
