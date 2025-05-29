@@ -25,8 +25,8 @@ export const NETWORK_WS_URLS: { [name in NETWORK_NAME]: string } = {
     // TODO: set public endpoints when they exist
     stagenet: "",
     alphanet: "",
-    moonlight: "wss://qco-moonlight-rpc-1.rv.stagenet.tanssi.network",
-    tanssi: "",
+    moonlight: "wss://moonlight.tanssi-dev.network",
+    tanssi: "wss://tanssi.tanssi-api.network",
     kusama: "wss://kusama-rpc.polkadot.io",
     polkadot: "wss://rpc.polkadot.io",
 };
