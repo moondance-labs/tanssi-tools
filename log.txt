@@ -1,0 +1,553 @@
+Skipping file: Genesis_Accounts.csv
+Reading CSV file: genesis_files/Proxy_OL_Any.csv
+Reading CSV file: genesis_files/Proxy_OL_BalanceStaking.csv
+Reading CSV file: genesis_files/Proxy_OL_Staking.csv
+Reading CSV file: genesis_files/Proxy_TF_Governance.csv
+Reading CSV file: genesis_files/Proxy_TF_OpsStaking.csv
+Reading CSV file: genesis_files/Proxy_TF_OpsTransfer.csv
+Reading CSV file: genesis_files/Proxy_TF_ProdSudo.csv
+
+--- Starting On-Chain Verification ---
+
+Verifying proxies for Genesis Account: 5EcmWB9yGXcY39kmfpLCx1Aqb2DmCikuD5KkUZHqQQDbwimM
+  ✅ CSV proxy found on-chain: Delegate: 5HKCTP8ui8xGMiatiS48FQ3hMF9bth2UbqL8S5yk6sapqbSg, Type: Any, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EjXUA4Hpw81U9hrQK573VdThAjsEzeMCTio3CK2HCr9qnmD, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EjXUA4Hpw81U9hrQK573VdThAjsEzeMCTio3CK2HCr9qnmD, Type: Balances, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5HN1xLdp4sy4ZFD8sX9Z5Yj7LUbo6hbPz1UDy8vSeWz3p8sc
+  ✅ CSV proxy found on-chain: Delegate: 5HKCTP8ui8xGMiatiS48FQ3hMF9bth2UbqL8S5yk6sapqbSg, Type: Any, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EjXUA4Hpw81U9hrQK573VdThAjsEzeMCTio3CK2HCr9qnmD, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EjXUA4Hpw81U9hrQK573VdThAjsEzeMCTio3CK2HCr9qnmD, Type: Balances, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5D2rYViBfECu59ro6kddBcpJxxvBg8RsxSP2Aqd4hq3tAx2o, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5CD8Wd5924mfiuNWPjLKSnWdeQCmCynWVoZn1oVZ5DAs4hKc, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5H8j2iMTekHy4tQB6CQLrC2eJ7N8CzHUdwXwUXnoDPwvnAkY, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5Dt2mRqpTM3KSkZgQRXpRUptMqB3YrQm69Do91q4ti6FqQ9V
+  ✅ CSV proxy found on-chain: Delegate: 5HKCTP8ui8xGMiatiS48FQ3hMF9bth2UbqL8S5yk6sapqbSg, Type: Any, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EjXUA4Hpw81U9hrQK573VdThAjsEzeMCTio3CK2HCr9qnmD, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EjXUA4Hpw81U9hrQK573VdThAjsEzeMCTio3CK2HCr9qnmD, Type: Balances, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5D2rYViBfECu59ro6kddBcpJxxvBg8RsxSP2Aqd4hq3tAx2o, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5CD8Wd5924mfiuNWPjLKSnWdeQCmCynWVoZn1oVZ5DAs4hKc, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5H8j2iMTekHy4tQB6CQLrC2eJ7N8CzHUdwXwUXnoDPwvnAkY, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5FWSRCyjawFrk7BEZNL6buYodp3UrmZ8CB6HpjGTiY2iA6QL
+  ✅ CSV proxy found on-chain: Delegate: 5HKCTP8ui8xGMiatiS48FQ3hMF9bth2UbqL8S5yk6sapqbSg, Type: Any, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EjXUA4Hpw81U9hrQK573VdThAjsEzeMCTio3CK2HCr9qnmD, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EjXUA4Hpw81U9hrQK573VdThAjsEzeMCTio3CK2HCr9qnmD, Type: Balances, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5D2rYViBfECu59ro6kddBcpJxxvBg8RsxSP2Aqd4hq3tAx2o, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5CD8Wd5924mfiuNWPjLKSnWdeQCmCynWVoZn1oVZ5DAs4hKc, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5H8j2iMTekHy4tQB6CQLrC2eJ7N8CzHUdwXwUXnoDPwvnAkY, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5HEiraQFT2pHqK697etfwi4q1Yrb6bhSMurVHwFr2jijpJmv
+  ✅ CSV proxy found on-chain: Delegate: 5HKCTP8ui8xGMiatiS48FQ3hMF9bth2UbqL8S5yk6sapqbSg, Type: Any, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EjXUA4Hpw81U9hrQK573VdThAjsEzeMCTio3CK2HCr9qnmD, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EjXUA4Hpw81U9hrQK573VdThAjsEzeMCTio3CK2HCr9qnmD, Type: Balances, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5D2rYViBfECu59ro6kddBcpJxxvBg8RsxSP2Aqd4hq3tAx2o, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5CD8Wd5924mfiuNWPjLKSnWdeQCmCynWVoZn1oVZ5DAs4hKc, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5H8j2iMTekHy4tQB6CQLrC2eJ7N8CzHUdwXwUXnoDPwvnAkY, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5FjsFFTXJCJeP3ujHjwSM7AgPQHe2DHU9ZNYASjRSzRRwEwL
+  ✅ CSV proxy found on-chain: Delegate: 5HKCTP8ui8xGMiatiS48FQ3hMF9bth2UbqL8S5yk6sapqbSg, Type: Any, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EjXUA4Hpw81U9hrQK573VdThAjsEzeMCTio3CK2HCr9qnmD, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EjXUA4Hpw81U9hrQK573VdThAjsEzeMCTio3CK2HCr9qnmD, Type: Balances, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5G6NAE72PMRahnHgu4gUEquLoPnGVmBYc94jfiw3JdVoLHyf
+  ✅ CSV proxy found on-chain: Delegate: 5CARQRU1yi9VFv2WDkFdp4BwbJDLuKa3znmswbLiwErjEaKm, Type: Governance, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5HoMX4f6mih3zAMwLiakTJBNZ49JSWiV5PeyJDBxr1Uovx2z, Type: Governance, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5FDtLaijviT4bbvPwP4TNr6cWgThQqV1ynuhdHxFAo3XKBxa, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5E7ZRqBmNBvABGY17Qjkvm4HFwccJmrpRF5ugbwTgX5BEbiF, Type: Any, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5ETwZ9uvTCdLRCAvKeLRsDPeeu7YMBzSRJdew5nBGY4HenZd
+  ✅ CSV proxy found on-chain: Delegate: 5CARQRU1yi9VFv2WDkFdp4BwbJDLuKa3znmswbLiwErjEaKm, Type: Governance, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5HoMX4f6mih3zAMwLiakTJBNZ49JSWiV5PeyJDBxr1Uovx2z, Type: Governance, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5FDtLaijviT4bbvPwP4TNr6cWgThQqV1ynuhdHxFAo3XKBxa, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5FqH7yiAtWpRPNxCUTZTxGa4aKreNK1T3EhHh5SNxYRKSbBL
+  ✅ CSV proxy found on-chain: Delegate: 5CARQRU1yi9VFv2WDkFdp4BwbJDLuKa3znmswbLiwErjEaKm, Type: Governance, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5HoMX4f6mih3zAMwLiakTJBNZ49JSWiV5PeyJDBxr1Uovx2z, Type: Governance, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5FDtLaijviT4bbvPwP4TNr6cWgThQqV1ynuhdHxFAo3XKBxa, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5E6trwGvNZLaYxPvUYFBQjSrBPST2uxKcjLBBs3QZ87VB7yo
+  ✅ CSV proxy found on-chain: Delegate: 5CARQRU1yi9VFv2WDkFdp4BwbJDLuKa3znmswbLiwErjEaKm, Type: Governance, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5HoMX4f6mih3zAMwLiakTJBNZ49JSWiV5PeyJDBxr1Uovx2z, Type: Governance, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5FDtLaijviT4bbvPwP4TNr6cWgThQqV1ynuhdHxFAo3XKBxa, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5EqQQcdMKg3pZ6dV16orrfkRUpv69Y65pe2WfLJ8ckBhSaD8
+  ✅ CSV proxy found on-chain: Delegate: 5HBzo881cdwcVXquYbF21KMjKFqcbftSYyZhnLK5YtqjoNJY, Type: Governance, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5HiEG3x7NS38b3HbFQ72AY5JtEmi4Avn9B3QA9ApyzUSUvdx, Type: Governance, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5FDtLaijviT4bbvPwP4TNr6cWgThQqV1ynuhdHxFAo3XKBxa, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5G3XzJEYRHahKLv47tjtRubaWKd89oZrLCDSj323kBkiiwgF
+  ✅ CSV proxy found on-chain: Delegate: 5HBzo881cdwcVXquYbF21KMjKFqcbftSYyZhnLK5YtqjoNJY, Type: Governance, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5HiEG3x7NS38b3HbFQ72AY5JtEmi4Avn9B3QA9ApyzUSUvdx, Type: Governance, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5FDtLaijviT4bbvPwP4TNr6cWgThQqV1ynuhdHxFAo3XKBxa, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5EvLY9FvzS4KFxRPjaMoawm7YJqTEHeeDrkS6p4pqZCU8uRw
+  ✅ CSV proxy found on-chain: Delegate: 5HBzo881cdwcVXquYbF21KMjKFqcbftSYyZhnLK5YtqjoNJY, Type: Governance, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5HiEG3x7NS38b3HbFQ72AY5JtEmi4Avn9B3QA9ApyzUSUvdx, Type: Governance, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5FDtLaijviT4bbvPwP4TNr6cWgThQqV1ynuhdHxFAo3XKBxa, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5FYsXbFHChNLTnKFNNrt6hQvTYDGRs4r3iNK2AWc3cVX627L
+  ✅ CSV proxy found on-chain: Delegate: 5HBzo881cdwcVXquYbF21KMjKFqcbftSYyZhnLK5YtqjoNJY, Type: Governance, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5HiEG3x7NS38b3HbFQ72AY5JtEmi4Avn9B3QA9ApyzUSUvdx, Type: Governance, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5FDtLaijviT4bbvPwP4TNr6cWgThQqV1ynuhdHxFAo3XKBxa, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5D4XUvkFCDjxNorMSqu8Xt21CMcJSo5d6Xp6X7j4Q5W6XJ4K
+  ✅ CSV proxy found on-chain: Delegate: 5EcZbRCzFKrgRrBA3jdKNCNpN7usc2K2Y8kBxfZggMmSid7u, Type: Governance, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5GNF3mUb2gCLChegy5j5b7PMtjqKTQzzMQXvRnormyPNy688, Type: Governance, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5FDtLaijviT4bbvPwP4TNr6cWgThQqV1ynuhdHxFAo3XKBxa, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5Dnsgi6YwaKVNxtcMkaEX5xzt6qu6MnDxEvHBFHgXpr6RDSd
+  ✅ CSV proxy found on-chain: Delegate: 5EcZbRCzFKrgRrBA3jdKNCNpN7usc2K2Y8kBxfZggMmSid7u, Type: Governance, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5GNF3mUb2gCLChegy5j5b7PMtjqKTQzzMQXvRnormyPNy688, Type: Governance, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5FDtLaijviT4bbvPwP4TNr6cWgThQqV1ynuhdHxFAo3XKBxa, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5CZtX3p8HUnKTqoGFM5Le3wJnf9t52CfSAnik6NePdEvqznR
+  ✅ CSV proxy found on-chain: Delegate: 5EcZbRCzFKrgRrBA3jdKNCNpN7usc2K2Y8kBxfZggMmSid7u, Type: Governance, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5GNF3mUb2gCLChegy5j5b7PMtjqKTQzzMQXvRnormyPNy688, Type: Governance, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5FDtLaijviT4bbvPwP4TNr6cWgThQqV1ynuhdHxFAo3XKBxa, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5EYzK7g1QFPeF7WwfmNtUjcAZj34FvrFzFF2LA9zj9tQWkjk
+  ✅ CSV proxy found on-chain: Delegate: 5EcZbRCzFKrgRrBA3jdKNCNpN7usc2K2Y8kBxfZggMmSid7u, Type: Governance, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5GNF3mUb2gCLChegy5j5b7PMtjqKTQzzMQXvRnormyPNy688, Type: Governance, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5FDtLaijviT4bbvPwP4TNr6cWgThQqV1ynuhdHxFAo3XKBxa, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5HVc2HNQH8DW73GKpiVq8U2g9sryCKStkpVaonVD8WL2Vn3w
+  ✅ CSV proxy found on-chain: Delegate: 5FDtLaijviT4bbvPwP4TNr6cWgThQqV1ynuhdHxFAo3XKBxa, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5E7ZRqBmNBvABGY17Qjkvm4HFwccJmrpRF5ugbwTgX5BEbiF, Type: Balances, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5Cr4f1RCTyj2ChpJtNrFEh3JzLnwExNzvQWy5xwpgoMQ4gF1
+  ✅ CSV proxy found on-chain: Delegate: 5FDtLaijviT4bbvPwP4TNr6cWgThQqV1ynuhdHxFAo3XKBxa, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5E7ZRqBmNBvABGY17Qjkvm4HFwccJmrpRF5ugbwTgX5BEbiF, Type: Balances, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5GeHAEAJedWDkosbSHHuraDywM2mQS5QtD4R5AxhfbRB9Xim
+  ✅ CSV proxy found on-chain: Delegate: 5FDtLaijviT4bbvPwP4TNr6cWgThQqV1ynuhdHxFAo3XKBxa, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5E7ZRqBmNBvABGY17Qjkvm4HFwccJmrpRF5ugbwTgX5BEbiF, Type: Balances, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5FCVfimxxAEc2ZfZsyMxFcwunfcAsn9Pkznry37wX3hGoAR2
+  ✅ CSV proxy found on-chain: Delegate: 5FDtLaijviT4bbvPwP4TNr6cWgThQqV1ynuhdHxFAo3XKBxa, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5E7ZRqBmNBvABGY17Qjkvm4HFwccJmrpRF5ugbwTgX5BEbiF, Type: Balances, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5ES4LPV2mWJjXyXURfbHunACsNARkhvXZGZeEDywnUyH8h8u
+  ✅ CSV proxy found on-chain: Delegate: 5FDtLaijviT4bbvPwP4TNr6cWgThQqV1ynuhdHxFAo3XKBxa, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5E7ZRqBmNBvABGY17Qjkvm4HFwccJmrpRF5ugbwTgX5BEbiF, Type: Balances, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5GirqZPGx3kRopwD7RYZoFwwiKszYUrvSCFPoAvqDYKd1hCa
+  ✅ CSV proxy found on-chain: Delegate: 5FDtLaijviT4bbvPwP4TNr6cWgThQqV1ynuhdHxFAo3XKBxa, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5E7ZRqBmNBvABGY17Qjkvm4HFwccJmrpRF5ugbwTgX5BEbiF, Type: Balances, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5DtJhMb9F6fbUNPnvG4N5fG9PmuQi1jJ9oDnnPHnDn5GLDWQ
+  ✅ CSV proxy found on-chain: Delegate: 5FDtLaijviT4bbvPwP4TNr6cWgThQqV1ynuhdHxFAo3XKBxa, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5E7ZRqBmNBvABGY17Qjkvm4HFwccJmrpRF5ugbwTgX5BEbiF, Type: Balances, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5Hpfamx4ZgdJgyFH5pL7NjbQBBW72nqNzV19ThKf1kVgdqEA
+  ✅ CSV proxy found on-chain: Delegate: 5FDtLaijviT4bbvPwP4TNr6cWgThQqV1ynuhdHxFAo3XKBxa, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5E7ZRqBmNBvABGY17Qjkvm4HFwccJmrpRF5ugbwTgX5BEbiF, Type: Balances, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5Gk2rjWNk5jxXSkLtryQXJmz5xpMJu2Ewwp1VmMs2MggapJX
+  ✅ CSV proxy found on-chain: Delegate: 5FDtLaijviT4bbvPwP4TNr6cWgThQqV1ynuhdHxFAo3XKBxa, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5E7ZRqBmNBvABGY17Qjkvm4HFwccJmrpRF5ugbwTgX5BEbiF, Type: Balances, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5Dqpyw1YEKecvU83ZtMrztfHfo67JBHy7ZYrGTFARxvovML5
+  ✅ CSV proxy found on-chain: Delegate: 5FDtLaijviT4bbvPwP4TNr6cWgThQqV1ynuhdHxFAo3XKBxa, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5E7ZRqBmNBvABGY17Qjkvm4HFwccJmrpRF5ugbwTgX5BEbiF, Type: Balances, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5HNjsVdwdQtbCbqeYq2pEKWi6EUJsuJhyYDkfVZDfniL8sRt
+  ✅ CSV proxy found on-chain: Delegate: 5FDtLaijviT4bbvPwP4TNr6cWgThQqV1ynuhdHxFAo3XKBxa, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5E7ZRqBmNBvABGY17Qjkvm4HFwccJmrpRF5ugbwTgX5BEbiF, Type: Balances, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5EehGGpwzi7Y8eWGSKk8vwSiBuE1HXELZjRxwwE95Lb42nys
+  ✅ CSV proxy found on-chain: Delegate: 5FDtLaijviT4bbvPwP4TNr6cWgThQqV1ynuhdHxFAo3XKBxa, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5E7ZRqBmNBvABGY17Qjkvm4HFwccJmrpRF5ugbwTgX5BEbiF, Type: Balances, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5HgnQkKYQVyV6s9bdXPSctewePr8UpwbJf1fBU9qicy6VVMv
+  ✅ CSV proxy found on-chain: Delegate: 5FDtLaijviT4bbvPwP4TNr6cWgThQqV1ynuhdHxFAo3XKBxa, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5E7ZRqBmNBvABGY17Qjkvm4HFwccJmrpRF5ugbwTgX5BEbiF, Type: Balances, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5HMXHLSxnGy16MHcVRb3jxLci1PBwFkXQkYhAC665CsCRkyD
+  ✅ CSV proxy found on-chain: Delegate: 5FDtLaijviT4bbvPwP4TNr6cWgThQqV1ynuhdHxFAo3XKBxa, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5E7ZRqBmNBvABGY17Qjkvm4HFwccJmrpRF5ugbwTgX5BEbiF, Type: Balances, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5HBnN8ziftFafXM42rLwoXaGCi46Qp66kXFBGaXV6uNimUJq
+  ✅ CSV proxy found on-chain: Delegate: 5FDtLaijviT4bbvPwP4TNr6cWgThQqV1ynuhdHxFAo3XKBxa, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5E7ZRqBmNBvABGY17Qjkvm4HFwccJmrpRF5ugbwTgX5BEbiF, Type: Balances, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5H3zLeqp9E6KxiMPNmGDSvcgARD3fLnqGDnQgYoqGkUK8amo
+  ✅ CSV proxy found on-chain: Delegate: 5FDtLaijviT4bbvPwP4TNr6cWgThQqV1ynuhdHxFAo3XKBxa, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5FNLzriwQcw3TCGuNFyoPJTMMy7q8yVksu16cLngEp3H7cMt
+  ✅ CSV proxy found on-chain: Delegate: 5FDtLaijviT4bbvPwP4TNr6cWgThQqV1ynuhdHxFAo3XKBxa, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5CAJqWVQqjDWoxtuuApZZcLBwkNEwQrieCeneiqPCRE5kbxc
+  ✅ CSV proxy found on-chain: Delegate: 5FDtLaijviT4bbvPwP4TNr6cWgThQqV1ynuhdHxFAo3XKBxa, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5G4BuAtfxA7RPfXC2Y6H6bpTgua3ecPFdEr4LPV4w81C8JgP
+  ✅ CSV proxy found on-chain: Delegate: 5FDtLaijviT4bbvPwP4TNr6cWgThQqV1ynuhdHxFAo3XKBxa, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5HREBrtkWvgcXnHAWK15ygZoh27oYhgkRxXuQQiZduPGoRnH
+  ✅ CSV proxy found on-chain: Delegate: 5FDtLaijviT4bbvPwP4TNr6cWgThQqV1ynuhdHxFAo3XKBxa, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5HbnzUbmtxr2cGdeL7woP2zcmCS8LuKR4HnLN9N6rfvKdPfV
+  ✅ CSV proxy found on-chain: Delegate: 5FDtLaijviT4bbvPwP4TNr6cWgThQqV1ynuhdHxFAo3XKBxa, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5HdG4ecwDBktvEx3qWKs7njt2NHUVW5UNLGkSdNjdDztVGwd
+  ✅ CSV proxy found on-chain: Delegate: 5FDtLaijviT4bbvPwP4TNr6cWgThQqV1ynuhdHxFAo3XKBxa, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5D4R6hpp5EmqH6EXc7nHYXPw3DMjJDXyDrZLexEbHBMJSBM5
+  ✅ CSV proxy found on-chain: Delegate: 5FDtLaijviT4bbvPwP4TNr6cWgThQqV1ynuhdHxFAo3XKBxa, Type: Staking, Delay: 0
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5HMvhXULuUL3eoeLFejHGnmuvEUwV4pU5d7pgp3LVCKXHa76
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5E2aupdPYshyBFbFoN4in7QMRt44eKfLprmk6znioYdmYU38
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5G4cFk5xpnQDvHuYGL45fjcx5aQnjQV6xgzuZikg7gZiLN1U
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5GqHn463RoNjTnmmR3iLvUcPjwfy81Gc4Piro6W6XftHSfQC
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5F6bEsTrVkUR12LP1J9ErGkrT2qb54tTaenH6RRoJbxSYMEr
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5EF7WDfZ1Mkkd6rPFzDjmqHq159FwFKTbkCSq1TLA5nXtL8n
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5Dq592Du8244Q1pra3MRSvJHSH4Lm5A1KMQsKkfdBWAcNynT
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5GYWLzx3FGgX7amWo9xXkxaBjJA8VYLmhZMv3eib5bfb1Yo9
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5EyVKQSdpKnzt5vw7TTjb82aZoyUeZbeH88S9KaXRv9viRVB
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5ENzJXQtZvFnNjzDz4Joge2FR9pxqrMLpH6qZBake4XZwQmV
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5CPzN5vBUwP3rMXmNcYwuf2s4VADtEGYq99sbck7yWhkBjjP
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5CrSTdQ6nby5rHDLGCCS7uDdsim5SeZH1jFHih8UkccW8sxp
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5FnZk1BMkTYFGVoKm6RV3vTukok7hSd7KVDRad9jcjA3cQa2
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5DZrGw4Y1jaBKwxEoPX2wJRxvoK9k8AKPBExDzEwjLz3SwSp
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5H4LxjpFjqFpvBRP7kSqbco5Bo9GpsLPjo8TtkiDT9zqJrmD
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5G3x2ZYq2bGJA1AefPDhysEnYcqJpCyQHo8CoZixrrTSZtuU
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5GBiarpVckvgj4JUnuYfGsv1Qo2C5LdtHjcQPL9TrgpYKzUg
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5E54QiYW5JnDHmaBFYsbiJCUNeZxeChDxbr23UK9UNUcxh4Q
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5HbfEABgBvEb7KJ1PEycvPu5mvzvY2kqcB2gREeMhHzoyEdm
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5F9u5JoNMY24pYtzRU9vhtMsqskwqkBdYDcQVNBxjvJY57Sx
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5HdaQVv1EjwADSN7jt95x7JABBE3m6u24etLso4YMYDWJZK4
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5FxwXhS8CKuftkwNL3VwjuwWyfgRmVAYovdcHf9kxTK74LPL
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5Fh7rNUEvA37gY7Nm7hmgXGom3ijfUoCT2aZcVrNhPa47CYe
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5H6PtUXcsBkQEueK8SUF9KD2M8Cwk716PYJp5N2BEj5YjZva
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5CnjYPtZmxprqHAWGTFB8NdXYidTRLsmMTbyFdVxj2qPucXT
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5EPNMdgmLwsJaxm84xahuiTkm3jUFb6x4tVqFyrKEGABJZKF
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5ECTdDShsebKjt5cdtWevNdj1gevuYEUG2wsYwkMwTEnFFCn
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5CX8FjLP5UyrUwhzCsTfPE2sqC2sLPRbjkCV8QbaW7PtmEGi
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5HGxAoTcvmCTmiqE4hbyyeuFvQzVmcnEdS6fQ5iYMdu4Nukm
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5H9D8R2HUjMuUdead18vmk1orbSMDYqfEiNsT2mcmQADJTeZ
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5GEMa5pPPEeeuVYkuPBbKNua1nitBntcC1bnaqyctCRj3PPv
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5FnwoEEPAL3rpxH9VNhjuG4qSaLjiyuKa3SWsdr9bcxvtwYG
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5FFU7D5bx39WMViKgUe7JSTT2hN63BEVXSLGcmnEL5zbEdE5
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5FpPNR8qHndwprbogG61rniiBgcTnWYkXggnQcw6QTQStjqG
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5FjViH7x1jkNkhdNUeTsr1VcXLgozkW7cSToy8F1rScdd3o5
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5HMcuph1DsUo3F2XTaWZi44mbPLELQmSrnUBZ5KT55Mv3za8
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5F1QEuRhkHD6VfCkGVmgv2MecmUKvHLNYMMEq2xNxccoaziw
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5GH8qs2QrHguPosbXFCwJUHx9PNanZn8pURKxkdFZrDKC4Ze
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5EACxsNcqhuk3qw6qxf5nDTZ6EMDNQKSqLWz4CuAivcrckq3
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5GzkyZXEWg7joj6WMTAW3FKURtFCGjNzF4TVM2FZLVwygze7
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5DXZjd5ViiRftZcYrP4ehhJg6dNU4nUMoUQbe7tVHnT4JiJ6
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5GjqbUiRLjdaBiioYsdPeeyP5dbqBSVNSoL9gnTgkjdMfXvZ
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5HQNYhLkL86bnNNzcpLNrWun8fhQLgXd9eeEQDBzEpSJfLBy
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5DRS3T1GXbsnwqfGPDssFKhJ5encZvYHsbggUsX1Jip1Xr4m
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5Gzn4u7VL6dM59qf8cADUYgmirBuMis8u1YhPdEveBB24Nti
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5CrCpmStyAVEmMQmhGD9CQMfi6VGHEGnzjPxHKh6bvrTEAhu
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5FqPnufbATzefEW1iXyEQ7az6ShiuoFEj8i7XtJjRT8Pm371
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5FjF5FCKwA3iiuYEtQmzpqgWr6xRDAdQCKHbu6WMETw6mnBt
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5GzZEyqoTWpdYEEhEw4JPFoNcBzPQ5vaq9teRpkHY5GRdtAg
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5Eydk8o73nxqejEXmvoZ84wGzzAHesyBUe2EVpz3gATkXzzi
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5G9KKmMHNHWkNdPk3Gr8yEPZ3HpCSLV3ofF5QKxtjq3mm6WD
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5CDd4dfTFZ5QvRPHzMk42bh1DqVomYqEVwFneVrseeyhGXCV
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5EJ3AiPeNdMYPY8XTxDZTVp4mxCLa1mif16Vc6wUknxisVV5
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5CfKN4yrcpXGG8J7GbwKS14gxFBpgp6VPmMgUDaKk5fbeoZh
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5H1BmEZ5vrj2Hv4bVHAwfwB7dYRM73cKjnocqJKvCCrj74zq
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5HTkCAkR54YBZCuBLyyADYvxNjzkTkyTHW3wVmoqMebN8ePb
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5CkHExEWJZnhcaKLLrSofxukh1oRvL1QLpRayAM8h5kcKr7T
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5GbBenjURmR4fZcMajaZWcsQNFWvpz1UxU5yDvxa5yibgnMQ
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5Gn4wxvHoG6w4usrTVuDt4jkfGwbMZVkMWZdhS9sP46EqqR3
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5HMj9jKSSerbZaSW2aY1YmYPfQHuzKWsa1MVTsYwahLtGzGL
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5H9MKsQUe9QqBPCY7osdGL2KNMGBmovaratLPFDSnsPbedSd
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5CCjqj34GzCm91yiRdeW4j1d7FSCJHmQ2voawwgVB6K67n2e
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5HW4dHmY3PkCFXQ9zKf27cidM8Coqqg2H4Lj2sNpniLyixHi
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5DywpDv6cGgdUCvNheLC5pfbNtGhKQBBmrAUVLmbad9wWjiK
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5HgJ7y5eqUiVr4QvkMcPiGYWBmx9HnWocEXLvgESGMTUFVJW
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5Gj8ysiMndrG4jYtzB69EVnu2c81LLy2vx4RtxEPt5TmWDgJ
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5FpNHzRsQVtNgbJ7wwv1e16j2d6X6Ck3Uobg7iFKPkC3tXjX
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5CcuBJWZKE44PPr3mYk99oHqwsquJWofUzGmfqNB1pfhQH3c
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5HfvdhczHwhQD4XV8jGWvVsgrsoNt8kbKg4s3E678KNdJDTi
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5D7EAcFsbuE3CxBtN1sLEZchrHY31rqHdQeGYXak3t5V6WEK
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5DtTyKNB2GLVj2v3EuvXaNiumZsmo7xxwphMiVwkQ2cSLVtW
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5Gbv1WLswJDwoFLxuAHdYUoiXCjG5HaCYn3q7UsxHBJn6AkX
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5GTpmsiLEUXm2i5X7zUARXngMdQzamS4siSZjQTRetCfN9U4
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5DS3eZR5VVuifEeTFqpPkXcrAhkrA1TmpMkQGTske5qfCh5a
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5FNY6bsyvrdXmisvvfBgY4oxVNrycuWjkkh9HWuCPCXP82bJ
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5GxsqUHmjgSr7J1RMYDCgsH7T6UVZLQvqBEad61HP8XuJZwo
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5FvUHFdqmxTG9EJQXLVT7D5Xa95PLzkAJKMWbTc7F4tid9et
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5CFnak5fENNyqo1csPQYcE6eRGRic7FVmksxNshHy2qwus1K
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5GNn2w6ik5ygKNnodgFcXU9EFjYqfHjJnK4c834JE1ZsHsTe
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5FhCspkRDVf3uC4fSG8zfuNR8QJaFhaDXbWbWWTbv3w7adeq
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5FRc4qXbobshcGLCgf4Raf7bVxRsWh5vABeQjkKJRkkJ6WTU
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5CJmxXNyERQL5oHhm8jt8jbGae1VPWwfH1P2Wo8jLN3Hmqho
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5FCPniJrrArQUiEZmguSrr6jd7gJrraLcWj1P4G6UBSiRi2Z
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5F4TAVLzyfqv7KKCbEvujD9jFX7Y7h1opqvFfmZeAvNtHtJD
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5DZnwmMHK1nur5hWz8LsM8M61AJiL1xJu6igMCtuKHuvTGaK
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5Ctg4pgnqUZdLKetwEq4ro7YdN1c4eaAS6o1JX8VyiHipfxU
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5H66wqTKtofsdQyzU2UAT1jVxfts6U4pb2mQbiYEBCFe2GS7
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5E5EF4KnuHFhDgxTjfHcJKm4ycx36J16RSjxvroDMZ88L8ju
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5DoVcXEN3WorR7NEw5H2PJjGsSqwZg8TKknhN9Q2KUeAcbkQ
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5EnVVfCUFHUPHdtrRXNQYKcdCjrHHgMJ22gufkodJUL9gWgw
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5DUS6tsPhXjsTCPLQKzVmyHnn5PgoybSgbHxBgU7Nsm2r3AG
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5FjcX18KJLTDJsS3jYLPhK5q7QmRjuBPNHHL11dX9bBS461v
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5G1DQGQRervax8KL4avYDuGhqEckZrJH9KrnQRZyfrMiZcLk
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5HmFAHb8Rbbpt4XH8rR5u55sYW4Psno228ZBVwur3ZBJ6pZx
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5CAuCuAbLj83kQHcDniT5MbBp97acXsrLrwuX6QgpyWZ7YEh
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5GzZp175cUoP3kVScdurqjeao7eoJpCV6e7T4dgYYGha7qJk
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5Dnikz8m5MtCyr5SW8PEDsd12GirYdTvNdpyxX5Qc72pP67e
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5CJuvtmrU7n6CewBRddZhnTeo1mtjCNvWR7xB9ZUfRZPWzRp
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5FKZ5Zz3BEnjbZF6MDkUsmJZsGV76GYfAbejghGqn6iFTA6p
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5HmU8XcJRNASBt6y5tMmy7D6EShgHCT2WB2GaqEPkPuK8Mdx
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5D7NpMumxR8Fg51rnHDUQz93w4jMLjs2eVScjCP8eyVSZFWM
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5D1wxphiY15f7wb4X1XebuoqkbxXnqd3k4gtECW7HZLB7w4U
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5CZt8QxbnWuKcpMH1JYJwp7t1TVQxcHrDWNKoNrfB7iyNuFX
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5E9iAoBKBUUkYjhoMFe28K9D2NMHqDxeiwiJ9xVZSEi4R7pT
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
+
+Verifying proxies for Genesis Account: 5CqxDFhCeAXdpg2GQ6mKmhRvLQwfArn72Zv4Sy9wgsnr5H2g
+  ✅ CSV proxy found on-chain: Delegate: 5EVqXYb1uF38pmYWS5HDUEBtS1mMRnKprJM1fCYusujnkNvX, Type: Any, Delay: 0
