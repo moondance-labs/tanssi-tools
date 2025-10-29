@@ -4,7 +4,7 @@ import fs from "fs";
 import * as path from "path";
 import { decodeAddress } from "@polkadot/util-crypto";
 import { parse } from "csv-parse/sync";
-import "@tanssi/api-augment"
+import "@tanssi/api-augment";
 import { PalletProxyProxyDefinition } from "@polkadot/types/lookup";
 
 /* CSV file must have the following format
@@ -45,10 +45,11 @@ async function verifyAccounts(api, directoryPath: string) {
   // Read all files in the specified directory
   const files = fs.readdirSync(directoryPath);
 
-  // Filter for CSV files
-  const csvFiles = files.filter(
-    (file) => path.extname(file).toLowerCase() === ".csv"
-  );
+  // Filter for CSV files that do not end with _old
+const csvFiles = files.filter((file) => {
+  const { ext, name } = path.parse(file); // name = filename without extension
+  return ext.toLowerCase() === ".csv" && !name.toLowerCase().endsWith("_old");
+});
 
   if (csvFiles.length === 0) {
     throw new Error(`No CSV files found in the directory: ${directoryPath}`);
@@ -56,6 +57,11 @@ async function verifyAccounts(api, directoryPath: string) {
 
   // --- Step 1: Parse all CSV files and collect expected proxy configurations ---
   for (const csvFile of csvFiles) {
+    if (csvFile === "Genesis_Accounts.csv") {
+      console.log(`Skipping file: ${csvFile}`);
+      continue; // Skip this file
+    }
+
     const filePath = path.join(directoryPath, csvFile);
     console.log(`Reading CSV file: ${filePath}`);
 
@@ -77,9 +83,9 @@ async function verifyAccounts(api, directoryPath: string) {
     for (let i = 0; i < EXPECTED_HEADERS.length; i++) {
       if (headers[i] !== EXPECTED_HEADERS[i]) {
         throw new Error(
-          `CSV header mismatch in ${filePath}. Expected "${EXPECTED_HEADERS[i]}", got "${
-            headers[i]
-          }" at column ${i + 1}`
+          `CSV header mismatch in ${filePath}. Expected "${
+            EXPECTED_HEADERS[i]
+          }", got "${headers[i]}" at column ${i + 1}`
         );
       }
     }
@@ -101,13 +107,17 @@ async function verifyAccounts(api, directoryPath: string) {
       try {
         decodeAddress(genesis);
       } catch {
-        throw new Error(`Invalid Genesis Account address at row ${lineNumber} of ${filePath}`);
+        throw new Error(
+          `Invalid Genesis Account address at row ${lineNumber} of ${filePath}`
+        );
       }
 
       try {
         decodeAddress(proxy);
       } catch {
-        throw new Error(`Invalid Proxy Account address at row ${lineNumber} of ${filePath}`);
+        throw new Error(
+          `Invalid Proxy Account address at row ${lineNumber} of ${filePath}`
+        );
       }
 
       // Validate Delay is a number (and convert to string for consistent storage)
@@ -135,24 +145,31 @@ async function verifyAccounts(api, directoryPath: string) {
   console.log("\n--- Starting On-Chain Verification ---");
 
   // --- Step 2 & 3: Iterate through collected genesis accounts and compare with on-chain data ---
-  for (const [genesisAccount, csvProxyConfigs] of expectedProxiesFromCsv.entries()) {
+  for (const [
+    genesisAccount,
+    csvProxyConfigs,
+  ] of expectedProxiesFromCsv.entries()) {
     console.log(`\nVerifying proxies for Genesis Account: ${genesisAccount}`);
 
     try {
       const chainProxyResponse = await api.query.proxy.proxies(genesisAccount);
-      const chainProxyDefinitions: PalletProxyProxyDefinition = chainProxyResponse.toHuman() as any;
+      const chainProxyDefinitions: PalletProxyProxyDefinition =
+        chainProxyResponse.toHuman() as any;
 
       const onChainProxies: ProxyConfig[] = [];
 
       // Extract on-chain proxy configurations into a standardized format
-      if (Array.isArray(chainProxyDefinitions) && Array.isArray(chainProxyDefinitions[0])) {
-          for (const config of chainProxyDefinitions[0]) {
-              onChainProxies.push({
-                  delegate: config.delegate,
-                  proxyType: config.proxyType,
-                  delay: String(config.delay), // Ensure delay is string for comparison
-              });
-          }
+      if (
+        Array.isArray(chainProxyDefinitions) &&
+        Array.isArray(chainProxyDefinitions[0])
+      ) {
+        for (const config of chainProxyDefinitions[0]) {
+          onChainProxies.push({
+            delegate: config.delegate,
+            proxyType: config.proxyType,
+            delay: String(config.delay), // Ensure delay is string for comparison
+          });
+        }
       }
 
       // --- 3.1: Check if all CSV proxies exist on-chain ---
@@ -169,9 +186,13 @@ async function verifyAccounts(api, directoryPath: string) {
           }
         }
         if (matchFound) {
-          console.log(`  ✅ CSV proxy found on-chain: Delegate: ${csvConfig.delegate}, Type: ${csvConfig.proxyType}, Delay: ${csvConfig.delay}`);
+          console.log(
+            `  ✅ CSV proxy found on-chain: Delegate: ${csvConfig.delegate}, Type: ${csvConfig.proxyType}, Delay: ${csvConfig.delay}`
+          );
         } else {
-          console.error(`  ❌ CSV proxy NOT found on-chain: Delegate: ${csvConfig.delegate}, Type: ${csvConfig.proxyType}, Delay: ${csvConfig.delay}`);
+          console.error(
+            `  ❌ CSV proxy NOT found on-chain: Delegate: ${csvConfig.delegate}, Type: ${csvConfig.proxyType}, Delay: ${csvConfig.delay}`
+          );
         }
       }
 
@@ -192,21 +213,30 @@ async function verifyAccounts(api, directoryPath: string) {
           // This case was already covered by the previous loop, but helps readability if uncommented
           // console.log(`  ✅ On-chain proxy found in CSV: Delegate: ${onChainConfig.delegate}, Type: ${onChainConfig.proxyType}, Delay: ${onChainConfig.delay}`);
         } else {
-          console.warn(`  ⚠️ On-chain proxy NOT in CSV config: Delegate: ${onChainConfig.delegate}, Type: ${onChainConfig.proxyType}, Delay: ${onChainConfig.delay}`);
+          console.warn(
+            `  ⚠️ On-chain proxy NOT in CSV config: Delegate: ${onChainConfig.delegate}, Type: ${onChainConfig.proxyType}, Delay: ${onChainConfig.delay}`
+          );
         }
       }
 
       if (csvProxyConfigs.length === 0 && onChainProxies.length === 0) {
-        console.log(`  No proxies expected and none found on-chain for ${genesisAccount}.`);
+        console.log(
+          `  No proxies expected and none found on-chain for ${genesisAccount}.`
+        );
       } else if (csvProxyConfigs.length === 0 && onChainProxies.length > 0) {
-        console.warn(`  ⚠️ No proxies expected in CSV for ${genesisAccount}, but ${onChainProxies.length} found on-chain.`);
+        console.warn(
+          `  ⚠️ No proxies expected in CSV for ${genesisAccount}, but ${onChainProxies.length} found on-chain.`
+        );
       } else if (csvProxyConfigs.length > 0 && onChainProxies.length === 0) {
-        console.warn(`  ⚠️ Proxies expected in CSV for ${genesisAccount}, but none found on-chain.`);
+        console.warn(
+          `  ⚠️ Proxies expected in CSV for ${genesisAccount}, but none found on-chain.`
+        );
       }
-
-
     } catch (error) {
-      console.error(`Error querying or verifying proxies for Genesis Account ${genesisAccount}:`, error);
+      console.error(
+        `Error querying or verifying proxies for Genesis Account ${genesisAccount}:`,
+        error
+      );
     }
   }
 }
@@ -214,7 +244,6 @@ async function verifyAccounts(api, directoryPath: string) {
 async function main() {
   // Get API
   const api = await getApiFor(args);
-  await api.isReady;
 
   try {
     // Validate setups

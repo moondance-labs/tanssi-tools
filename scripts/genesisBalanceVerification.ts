@@ -27,7 +27,7 @@ const args = yargs.options({
   },
 }).argv;
 
-async function verifyBalances(api: ApiPromise, filePath: string) {
+async function verifyBalances(api, filePath: string) {
   const EXPECTED_HEADERS = ["Address", "Balance"];
   let totalCsvBalance = BigInt(0);
   let MismatchesFound = false;
@@ -50,7 +50,9 @@ async function verifyBalances(api: ApiPromise, filePath: string) {
       trim: true,
     });
   } catch (parseError: any) {
-    console.error(`  ❌ Error parsing CSV file ${filePath}: ${parseError.message}`);
+    console.error(
+      `  ❌ Error parsing CSV file ${filePath}: ${parseError.message}`
+    );
     process.exitCode = 1;
     return;
   }
@@ -80,7 +82,9 @@ async function verifyBalances(api: ApiPromise, filePath: string) {
       );
       MismatchesFound = true;
     } else {
-      console.log(`   Found ${records.length} data record(s) in ${filePath}. Verifying...`);
+      console.log(
+        `   Found ${records.length} data record(s) in ${filePath}. Verifying...`
+      );
       for (const [index, row] of records.entries()) {
         const lineNumber = index + 2;
         const address = row["Address"];
@@ -88,7 +92,9 @@ async function verifyBalances(api: ApiPromise, filePath: string) {
 
         if (address === undefined || csvBalanceStr === undefined) {
           console.error(
-            `  ❌ Missing 'Address' or 'Balance' field in row ${lineNumber} of ${filePath}. Row: ${JSON.stringify(row)}`
+            `  ❌ Missing 'Address' or 'Balance' field in row ${lineNumber} of ${filePath}. Row: ${JSON.stringify(
+              row
+            )}`
           );
           MismatchesFound = true;
           continue;
@@ -98,18 +104,24 @@ async function verifyBalances(api: ApiPromise, filePath: string) {
         const trimmedCsvBalanceStr = csvBalanceStr.trim();
 
         if (!trimmedAddress && !trimmedCsvBalanceStr) {
-          console.warn(`  Skipping empty or whitespace-only row ${lineNumber} in ${filePath}.`);
+          console.warn(
+            `  Skipping empty or whitespace-only row ${lineNumber} in ${filePath}.`
+          );
           continue;
         }
         if (!trimmedAddress) {
-          console.error(`  ❌ Missing Address in row ${lineNumber} of ${filePath}.`);
+          console.error(
+            `  ❌ Missing Address in row ${lineNumber} of ${filePath}.`
+          );
           MismatchesFound = true;
           continue;
         }
         csvAddresses.add(trimmedAddress); // Add to set after basic validation
 
         if (trimmedCsvBalanceStr === "") {
-          console.error(`  ❌ Missing Balance value in row ${lineNumber} for address ${trimmedAddress} in ${filePath}.`);
+          console.error(
+            `  ❌ Missing Balance value in row ${lineNumber} for address ${trimmedAddress} in ${filePath}.`
+          );
           MismatchesFound = true;
           continue;
         }
@@ -117,7 +129,9 @@ async function verifyBalances(api: ApiPromise, filePath: string) {
         try {
           decodeAddress(trimmedAddress);
         } catch {
-          console.error(`  ❌ Invalid address format for "${trimmedAddress}" at row ${lineNumber} of ${filePath}.`);
+          console.error(
+            `  ❌ Invalid address format for "${trimmedAddress}" at row ${lineNumber} of ${filePath}.`
+          );
           MismatchesFound = true;
           continue;
         }
@@ -133,7 +147,9 @@ async function verifyBalances(api: ApiPromise, filePath: string) {
             throw new Error("Balance cannot be negative.");
           }
         } catch (e: any) {
-          console.error(`  ❌ Invalid Balance format in CSV for address "${trimmedAddress}" at row ${lineNumber}: "${trimmedCsvBalanceStr}". ${e.message}`);
+          console.error(
+            `  ❌ Invalid Balance format in CSV for address "${trimmedAddress}" at row ${lineNumber}: "${trimmedCsvBalanceStr}". ${e.message}`
+          );
           MismatchesFound = true;
           continue;
         }
@@ -141,46 +157,64 @@ async function verifyBalances(api: ApiPromise, filePath: string) {
         totalCsvBalance += csvBalance;
 
         try {
-          const accountInfo = await api.query.system.account(trimmedAddress) as any;
+          const accountInfo = (await api.query.system.account(
+            trimmedAddress
+          )) as any;
           const onChainFreeBalance = BigInt(accountInfo.data.free.toString());
 
           if (csvBalance === onChainFreeBalance) {
-            console.log(`  ✅ Balance MATCH for ${trimmedAddress}: CSV: ${csvBalance.toString()}, On-chain: ${onChainFreeBalance.toString()}`);
+            console.log(
+              `  ✅ Balance MATCH for ${trimmedAddress}: CSV: ${csvBalance.toString()}, On-chain: ${onChainFreeBalance.toString()}`
+            );
           } else {
-            console.error(`  ❌ Balance MISMATCH for ${trimmedAddress}: CSV: ${csvBalance.toString()}, On-chain: ${onChainFreeBalance.toString()}`);
+            console.error(
+              `  ❌ Balance MISMATCH for ${trimmedAddress}: CSV: ${csvBalance.toString()}, On-chain: ${onChainFreeBalance.toString()}`
+            );
             MismatchesFound = true;
           }
         } catch (error: any) {
-          console.error(`  ❌ Error querying balance for address ${trimmedAddress} at row ${lineNumber}: ${error.message}`);
+          console.error(
+            `  ❌ Error querying balance for address ${trimmedAddress} at row ${lineNumber}: ${error.message}`
+          );
           if (csvBalance !== BigInt(0)) MismatchesFound = true;
-          else console.warn(`     CSV expected 0 for ${trimmedAddress}, but querying failed. This might be okay if account is reaped/empty.`);
+          else
+            console.warn(
+              `     CSV expected 0 for ${trimmedAddress}, but querying failed. This might be okay if account is reaped/empty.`
+            );
         }
       }
     }
   }
 
   // --- New Section: Full On-Chain Account Scan ---
-  console.log("\n--- Scanning All On-Chain Accounts (via system.account.entries) ---");
+  console.log(
+    "\n--- Scanning All On-Chain Accounts (via system.account.entries) ---"
+  );
   let totalOnChainFreeBalanceSum = BigInt(0);
-  const accountsOnChainNotInCsvWithBalance: { address: string; balance: bigint }[] = [];
+  const accountsOnChainNotInCsvWithBalance: {
+    address: string;
+    balance: bigint;
+  }[] = [];
   let onChainAccountsProcessed = 0;
 
   try {
     const rawAccountEntires = await api.query.system.account.entries();
 
-  let rawAccounts = [];
+    let rawAccounts = [];
 
-  rawAccountEntires.forEach(([key, exposure]) => {
-    rawAccounts.push({
-      account: key.args.map((k) => k.toHuman()),
-      balance: exposure.toHuman(),
+    rawAccountEntires.forEach(([key, exposure]) => {
+      rawAccounts.push({
+        account: key.args.map((k) => k.toHuman()),
+        balance: exposure.toHuman(),
+      });
     });
-  });
 
     for (const account of rawAccounts) {
       // The first argument to the key is the AccountId
       const onChainAddress = account.account[0];
-      const onChainFreeBalance = BigInt(account.balance.data.free.toString().replaceAll(',',''));
+      const onChainFreeBalance = BigInt(
+        account.balance.data.free.toString().replaceAll(",", "")
+      );
 
       totalOnChainFreeBalanceSum += onChainFreeBalance;
 
@@ -192,8 +226,12 @@ async function verifyBalances(api: ApiPromise, filePath: string) {
       }
     }
 
-    console.log(`  🔎 Processed ${rawAccounts.length} on-chain account entries.`);
-    console.log(`  💰 Sum of all on-chain 'free' balances from scan: ${totalOnChainFreeBalanceSum.toString()}`);
+    console.log(
+      `  🔎 Processed ${rawAccounts.length} on-chain account entries.`
+    );
+    console.log(
+      `  💰 Sum of all on-chain 'free' balances from scan: ${totalOnChainFreeBalanceSum.toString()}`
+    );
 
     if (accountsOnChainNotInCsvWithBalance.length > 0) {
       MismatchesFound = true;
@@ -201,13 +239,19 @@ async function verifyBalances(api: ApiPromise, filePath: string) {
         `  ❌ Found ${accountsOnChainNotInCsvWithBalance.length} account(s) with a 'free' balance on-chain but NOT listed in the CSV:`
       );
       for (const acc of accountsOnChainNotInCsvWithBalance) {
-        console.error(`     - Address: ${acc.address}, Balance: ${acc.balance.toString()}`);
+        console.error(
+          `     - Address: ${acc.address}, Balance: ${acc.balance.toString()}`
+        );
       }
     } else {
-      console.log("  ✅ All on-chain accounts with a 'free' balance appear to be covered by the CSV (or have zero 'free' balance).");
+      console.log(
+        "  ✅ All on-chain accounts with a 'free' balance appear to be covered by the CSV (or have zero 'free' balance)."
+      );
     }
   } catch (error: any) {
-    console.error(`  ❌ Error during on-chain account scan (system.account.entries): ${error.message}`);
+    console.error(
+      `  ❌ Error during on-chain account scan (system.account.entries): ${error.message}`
+    );
     MismatchesFound = true;
   }
   // --- End of New Section ---
@@ -217,16 +261,30 @@ async function verifyBalances(api: ApiPromise, filePath: string) {
     const totalIssuanceRaw = await api.query.balances.totalIssuance();
     const onChainTotalIssuance = BigInt(totalIssuanceRaw.toString());
 
-    console.log(`  💰 Total 'free' balance summed from CSV:             ${totalCsvBalance.toString()}`);
-    console.log(`  💰 Sum of all on-chain 'free' balances from scan:  ${totalOnChainFreeBalanceSum.toString()}`);
-    console.log(`  ⛓️ On-chain total issuance:                          ${onChainTotalIssuance.toString()}`);
+    console.log(
+      `  💰 Total 'free' balance summed from CSV:             ${totalCsvBalance.toString()}`
+    );
+    console.log(
+      `  💰 Sum of all on-chain 'free' balances from scan:  ${totalOnChainFreeBalanceSum.toString()}`
+    );
+    console.log(
+      `  ⛓️ On-chain total issuance:                          ${onChainTotalIssuance.toString()}`
+    );
 
     // Comparison 1: CSV sum vs Total Issuance
     if (totalCsvBalance === onChainTotalIssuance) {
-      console.log("  ✅ Sum of 'free' balances from CSV MATCHES on-chain total issuance.");
+      console.log(
+        "  ✅ Sum of 'free' balances from CSV MATCHES on-chain total issuance."
+      );
     } else {
-      console.error("  ❌ Sum of 'free' balances from CSV DOES NOT MATCH on-chain total issuance.");
-      console.error(`     Difference (CSV Total - Total Issuance): ${(totalCsvBalance - onChainTotalIssuance).toString()}`);
+      console.error(
+        "  ❌ Sum of 'free' balances from CSV DOES NOT MATCH on-chain total issuance."
+      );
+      console.error(
+        `     Difference (CSV Total - Total Issuance): ${(
+          totalCsvBalance - onChainTotalIssuance
+        ).toString()}`
+      );
       MismatchesFound = true;
     }
 
@@ -234,34 +292,47 @@ async function verifyBalances(api: ApiPromise, filePath: string) {
     // Note: This sum might not equal totalIssuance if there are reserved/locked balances,
     // as totalIssuance includes all forms of balance, not just 'free'.
     if (totalOnChainFreeBalanceSum === onChainTotalIssuance) {
-        console.log("  ✅ Sum of all on-chain 'free' balances (from scan) MATCHES total issuance.");
+      console.log(
+        "  ✅ Sum of all on-chain 'free' balances (from scan) MATCHES total issuance."
+      );
     } else {
-        // This might not be an "error" per se, but a point of information if reserved balances exist.
-        console.warn("  ⚠️ Sum of all on-chain 'free' balances (from scan) DOES NOT MATCH total issuance.");
-        const diff = totalOnChainFreeBalanceSum - onChainTotalIssuance;
-        console.warn(`     Difference (On-chain Free Sum - Total Issuance): ${diff.toString()}`);
-        console.warn(`     (This can be expected if accounts have reserved balances not included in the 'free' sum)`);
-        // You might decide if this specific difference should set MismatchesFound = true based on chain specifics.
-        // For now, it's a warning. If strict equality is expected, change to console.error and set MismatchesFound.
+      // This might not be an "error" per se, but a point of information if reserved balances exist.
+      console.warn(
+        "  ⚠️ Sum of all on-chain 'free' balances (from scan) DOES NOT MATCH total issuance."
+      );
+      const diff = totalOnChainFreeBalanceSum - onChainTotalIssuance;
+      console.warn(
+        `     Difference (On-chain Free Sum - Total Issuance): ${diff.toString()}`
+      );
+      console.warn(
+        `     (This can be expected if accounts have reserved balances not included in the 'free' sum)`
+      );
+      // You might decide if this specific difference should set MismatchesFound = true based on chain specifics.
+      // For now, it's a warning. If strict equality is expected, change to console.error and set MismatchesFound.
     }
-
   } catch (error: any) {
     console.error(`  ❌ Error querying total issuance: ${error.message}`);
     MismatchesFound = true;
   }
 
   if (MismatchesFound) {
-    console.error("\n🚨 Verification complete with one or more mismatches or errors. 🚨");
+    console.error(
+      "\n🚨 Verification complete with one or more mismatches or errors. 🚨"
+    );
     if (!process.exitCode) process.exitCode = 1;
   } else {
-    console.log("\n🎉 Verification complete. All checks passed successfully or with noted warnings! 🎉");
+    console.log(
+      "\n🎉 Verification complete. All checks passed successfully or with noted warnings! 🎉"
+    );
   }
 }
 
 async function main() {
   const filePath = args["file-path"] as string;
   if (!filePath) {
-    console.error("Error: File path argument is missing. Please use --file-path <path_to_csv_file>.");
+    console.error(
+      "Error: File path argument is missing. Please use --file-path <path_to_csv_file>."
+    );
     process.exit(1);
   }
 
@@ -269,10 +340,23 @@ async function main() {
   try {
     api = await getApiFor(args);
     await api.isReady;
-    console.log(`🚀 Connected to network: ${(await api.rpc.system.chain()).toHuman()} via ${api.runtimeVersion.specName}/${api.runtimeVersion.specVersion}`);
-    await verifyBalances(api, filePath);
+
+    const apiAt = await api.at(
+      "0xdd6d086f75ec041b66e20c4186d327b23c8af244c534a2418de6574e8c041a60"
+    );
+    console.log(
+      `🚀 Connected to network: ${(
+        await api.rpc.system.chain()
+      ).toHuman()} via ${api.runtimeVersion.specName}/${
+        api.runtimeVersion.specVersion
+      }`
+    );
+    await verifyBalances(apiAt, filePath);
   } catch (error: any) {
-    console.error(`An unexpected error occurred in main: ${error.message}`, error);
+    console.error(
+      `An unexpected error occurred in main: ${error.message}`,
+      error
+    );
     process.exitCode = 1;
   } finally {
     if (api) {
