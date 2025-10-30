@@ -203,22 +203,6 @@ function toPerGenesisMap(rows: ProxyRow[]): PerGenesisConfig {
   return map;
 }
 
-function summarizePlan(
-  toRemove: Array<{ genesis: string; proxy: string; type: string; delay: string }>,
-  toAdd: Array<{ genesis: string; proxy: string; type: string; delay: string }>
-) {
-  const set = new Set<string>();
-  for (const r of toRemove) set.add(r.genesis);
-  for (const a of toAdd) set.add(a.genesis);
-  const accounts = Array.from(set);
-  console.log(`\n=== PLAN SUMMARY ===`);
-  console.log(`Accounts impacted: ${accounts.length}`);
-  console.log(`Removals: ${toRemove.length} | Additions: ${toAdd.length}`);
-  if (accounts.length <= 10) {
-    console.log(`Accounts: ${accounts.join(", ")}`);
-  }
-}
-
 async function buildCalls(
   api: any,
   newCfg: PerGenesisConfig,
@@ -249,22 +233,22 @@ async function buildCalls(
 
     const innerCalls: any[] = [];
 
-    if (oldRow) {
-      innerCalls.push(
-        api.tx.proxy.removeProxy(
-          decodeAddress(oldRow.proxy),
-          oldRow.type,
-          BigInt(oldRow.delay)
-        )
-      );
-    }
-
     if (newRow) {
       innerCalls.push(
         api.tx.proxy.addProxy(
           decodeAddress(newRow.proxy),
           newRow.type,
           BigInt(newRow.delay)
+        )
+      );
+    }
+
+    if (oldRow) {
+      innerCalls.push(
+        api.tx.proxy.removeProxy(
+          decodeAddress(oldRow.proxy),
+          oldRow.type,
+          BigInt(oldRow.delay)
         )
       );
     }
