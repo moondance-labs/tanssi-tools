@@ -7,6 +7,7 @@ import fs from "fs";
 import { decodeAddress } from "@polkadot/util-crypto";
 import { parse } from "csv-parse/sync";
 import { signFakeWithApi } from "@acala-network/chopsticks-utils";
+import { blake2AsHex } from "@polkadot/util-crypto";
 
 /**
  * CSV FORMAT (strict headers & order):
@@ -317,9 +318,11 @@ async function main() {
 
   // Print all hex for review
   console.log(`\n --- BATCH TX HEX ---`);
-  console.log(batchTx.toHex());
+  console.log(batchTx.method.toHex());
   console.log(`\n--- FINAL TX HEX ---`);
-  console.log(finalTx.toHex());
+  console.log(finalTx.method.toHex());
+  console.log(`\n--- TX HASH ---`);
+  console.log(blake2AsHex(finalTx.method.toHex()));
 
   // Optional: Test on Chopsticks with fake sudo (requires --sudo)
   if (args["chopsticks"] && args["sudo"] && args['url'] === 'ws://localhost:8000') {

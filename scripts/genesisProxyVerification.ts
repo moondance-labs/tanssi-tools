@@ -45,11 +45,13 @@ async function verifyAccounts(api, directoryPath: string) {
   // Read all files in the specified directory
   const files = fs.readdirSync(directoryPath);
 
-  // Filter for CSV files that do not end with _old
-const csvFiles = files.filter((file) => {
-  const { ext, name } = path.parse(file); // name = filename without extension
-  return ext.toLowerCase() === ".csv" && !name.toLowerCase().endsWith("_old");
-});
+  // Filter for CSV files that do not end with _old*
+  const reOld = /_old(\d+)?$/i;
+
+  const csvFiles = files.filter((file) => {
+    const { ext, name } = path.parse(file);
+    return ext.toLowerCase() === ".csv" && !reOld.test(name);
+  });
 
   if (csvFiles.length === 0) {
     throw new Error(`No CSV files found in the directory: ${directoryPath}`);
