@@ -54,8 +54,8 @@ const args = yargs(hideBin(process.argv))
       demandOption: false,
     },
     chopsticks: {
-      describe: "Chopsticks endpoint (e.g. ws://localhost:8000) for test send",
-      type: "string",
+      describe: "Chopsticks test (expects endpoint to be ws://localhost:8000",
+      type: "boolean",
       demandOption: false,
     },
   })
@@ -321,14 +321,12 @@ async function main() {
   console.log(`\n--- FINAL TX HEX ---`);
   console.log(finalTx.toHex());
 
-  await api.disconnect();
-
   // Optional: Test on Chopsticks with fake sudo (requires --sudo)
-  if (args["chopsticks"] && args["sudo"]) {
+  if (args["chopsticks"] && args["sudo"] && args['url'] === 'ws://localhost:8000') {
     console.log(`\n--- Chopsticks Testing ${args["chopsticks"]} ---`);
 
     // Create Chopsticks API
-    const chopsticksAPI = await getApiFor({ url: args["chopsticks"] });
+    const chopsticksAPI = await getApiFor({ url: args["url"] });
     const sudo = (await chopsticksAPI.query.sudo.key()).toString();
     console.log(`Sudo: ${sudo}`);
 
@@ -337,7 +335,14 @@ async function main() {
     await finalTx.send();
     console.log("--- Chopsticks Test Done ---");
     await chopsticksAPI.disconnect();
+  } else if (args["chopsticks"]) {
+    console.log(
+      `\nSkipping Chopsticks test (either --chopsticks or --sudo missing, or --url not ws://localhost:8000).`
+    );
   }
+
+  await api.disconnect();
+
 }
 
 main()

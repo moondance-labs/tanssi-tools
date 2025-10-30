@@ -32,8 +32,8 @@ const args = yargs.options({
     nargs: 0,
   },
   chopsticks: {
-    describe: "Provide Chopsticks endpoint (default ws://localhost:8000)",
-    type: "string",
+    describe: "Chopsticks test (expects endpoint to be ws://localhost:8000",
+    type: "boolean",
     demandOption: false,
   },
 }).argv;
@@ -153,14 +153,12 @@ async function main() {
   console.log(`--- FINAL TX ---`);
   console.log(finalTx.toHex());
 
-  await api.disconnect();
-
   // Testing in Chopsticks
-  if (args["chopsticks"] && args["sudo"]) {
-    console.log(`\n--- Chopsticks Testing ${args["chopsticks"]} ---`);
+  if (args["chopsticks"] && args["sudo"] && args['network'] === 'ws://localhost:8000') {
+    console.log(`\n--- Chopsticks Testing ws://localhost:8000 ---`);
 
     // Create Chopsticks API
-    const chopsticksAPI = await getApiFor({ url: args["chopsticks"] });
+    const chopsticksAPI = await getApiFor({ url: args["url"] });
     const sudo = (await chopsticksAPI.query.sudo.key()).toString();
     console.log(`Sudo: ${sudo}`);
 
@@ -170,6 +168,8 @@ async function main() {
     console.log("--- Chopsticks Test Done ---");
     await chopsticksAPI.disconnect();
   }
+
+  await api.disconnect();
 }
 
 main()
