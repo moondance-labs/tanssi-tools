@@ -154,7 +154,7 @@ async function main() {
   console.log(finalTx.toHex());
 
   // Testing in Chopsticks
-  if (args["chopsticks"] && args["sudo"] && args['network'] === 'ws://localhost:8000') {
+  if (args["chopsticks"] && args["sudo"] && args['url'] === 'ws://localhost:8000') {
     console.log(`\n--- Chopsticks Testing ws://localhost:8000 ---`);
 
     // Create Chopsticks API
