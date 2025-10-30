@@ -7,3 +7,5 @@ node_modules
 !/genesis_files/*.csv
 !/moonlight_files/*.csv
 
+.github/instructions/kluster-code-verify.instructions.md
+.kluster
